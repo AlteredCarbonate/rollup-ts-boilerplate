@@ -1,7 +1,4 @@
-node_modules/
-example/*
-dist
-!example/index.html
-!example/main.js
+node_modules/*
+build
 package-lock.json
 .rpt2_cache
