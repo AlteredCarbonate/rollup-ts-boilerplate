@@ -5,20 +5,27 @@
   "main": "dist/bundle.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "rollup -c -w",
+    "start": "node ./build/index.js",
+    "watch": "rollup -c -w",
     "build": "rollup -c"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "request-promise": "^4.2.6",
     "rollup": "^1.15.2",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-live-server": "^1.0.3",
+    "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-sourcemaps": "^0.4.2",
     "rollup-plugin-typescript2": "^0.21.1",
     "tslib": "^1.11.2",
     "typescript": "^3.8.3"
   },
   "dependencies": {
+    "@types/cheerio": "^0.22.28",
+    "cheerio": "^1.0.0-rc.5",
     "rollup-plugin-terser": "^5.3.0"
   }
 }
